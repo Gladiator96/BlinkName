@@ -1,0 +1,102 @@
+// defining pins and dot, dash 
+
+int led1 = D7;
+int dot = 200;
+int dash = 400;
+
+void setup() {
+    pinMode(led1, OUTPUT);
+    
+}
+
+// defining the functions for letter here
+
+void H() {
+    digitalWrite(led1, HIGH);
+    delay(dot);
+    digitalWrite(led1, LOW);
+    
+    delay(dot);
+    digitalWrite(led1, HIGH);
+    
+    delay(dot);
+    digitalWrite(led1, LOW);
+    
+    delay(dot);
+    digitalWrite(led1, HIGH);
+    
+    delay(dot);
+    digitalWrite(led1, LOW);
+    
+    delay(dot);
+    digitalWrite(led1, HIGH);
+    
+    delay(dot);
+    digitalWrite(led1, LOW);
+    
+    delay(dash);
+
+}
+
+void A() {
+    digitalWrite(led1, HIGH);
+    
+    delay(dot);
+    digitalWrite(led1, LOW);
+    
+    delay(dot);
+    digitalWrite(led1, HIGH);
+    
+    delay(dash);
+    digitalWrite(led1, LOW);
+    
+    delay(dash);
+}
+
+void S() {
+    digitalWrite(led1, HIGH);
+    
+    delay(dot);
+    digitalWrite(led1, LOW);
+    
+    delay(dot);
+    digitalWrite(led1, HIGH);
+    
+    delay(dot);
+    digitalWrite(led1, LOW);
+    
+    delay(dot);
+    digitalWrite(led1, HIGH);
+    
+    delay(dot);
+    digitalWrite(led1, LOW);
+    
+    delay(dash);
+}
+
+
+void N() {
+    digitalWrite(led1, HIGH);
+
+    delay(dash);
+    digitalWrite(led1, LOW);
+
+    delay(dot);
+    digitalWrite(led1, HIGH);
+
+    delay(dot);
+    digitalWrite(led1, LOW);
+
+    delay(dash);
+}
+
+void loop() {
+//calling the functions here    
+    
+    H();
+    A();
+    S();
+    S();
+    A();
+    N();
+}
